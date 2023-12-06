@@ -1,5 +1,12 @@
 # Intro
-Let's assume you have docker installed.
+I'll assume you have docker installed, some basic linux command line knowledge, an
+
+## Important Terminology
+- **host**: this is the infrastructure (e.g. VM, server) that the container will run on.
+- **image**: a packaged binary that contains (almost) everything you need to run a container
+- **container**: a sandboxed process that runs your application
+
+Can I use them in a sentence? Yes: You **build** or **download** an image in order to **run** a container on your **host**.
 
 ## Does It Work?
 Let's try running the `hello-world` container.
@@ -29,22 +36,13 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-## Important Terminology
-**host**: this is the infrastructure (e.g. VM, server) that the container will run on.
-
-**image**: a packaged binary that contains (almost) everything you need to run a container
-
-**container**: a sandboxed process that runs your application
-
-you **download** an image and you **run** a container on your **host**.
-
-## Let's try their suggestion
+## Trying hello-world's suggestion
 
 run `docker run -it ubuntu bash`
 
 how do i know im in the container?
 
-well, i'm root@644a31...
+well, i'm `root@<some_ugly_string>`
 
 let's open another terminal and check something:
 
@@ -54,8 +52,7 @@ CONTAINER ID   IMAGE                                COMMAND                  CRE
 644a31c42747   ubuntu                               "bash"                   56 seconds ago   Up 55 seconds                                                          magical_williamson
 ```
 
-yep! that's the right image. i can't do much in here though, it isn't a full blown linux install. it doesn't even have `less` or `vi` or even `nano`...
-
+yep! that's the right container id. i can't do much in here though, it isn't like a full blown linux install on your workstation. it doesn't even have `less` or `vi` or even `nano`...
 
 ## Ok well that was fun. Now what?
 Let's try something more complicated. Let's build our own image.
@@ -142,7 +139,7 @@ What about the non-docker pieces of the process?
 4. F5: If the application will be load balanced, the F5 will distribute traffic to the pool members, which are the docker hosts.
 
 ## The End
-There's a ton more to docker. We've really only discussed pretty simple web applications, but docker can run practically any kind of service you'd want.
+There's a ton more to docker. We've really only discussed pretty simple web applications, but docker can run practically any kind of service you'd want ("microservices").
 
 It's so powerful and abstract and "simple" to use that it's easy to forget how complicated it really is under the hood. It feels like magic.
 
