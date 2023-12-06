@@ -156,5 +156,5 @@ It's so powerful and abstract and "simple" to use that it's easy to forget how c
 - `sudo docker logs <container_id>`: shows you the docker logs for a container
 
 ##### Appendix: Other helpful info
-- Our documentation: https://tdx.umn.edu/TDClient/31/Portal/KB/ArticleDet?ID=7390
-- A more complicated Dockerfile, for one of the web team's applications: https://github.umn.edu/CSE-IT/ddev-2d/blob/main/.docker/Dockerfile
+- [Our documentation](https://tdx.umn.edu/TDClient/31/Portal/KB/ArticleDet?ID=7390)
+- [A more complicated Dockerfile](https://github.umn.edu/CSE-IT/ddev-2d/blob/main/.docker/Dockerfile), for one of the web team's applications. 
