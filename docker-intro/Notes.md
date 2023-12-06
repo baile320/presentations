@@ -2,7 +2,7 @@
 Let's assume you have docker installed.
 
 ## Does It Work?
-Let's try `hello-world`.
+Let's try running the `hello-world` container.
 
 ```bash
 tyler@cse-johnmcclane:~/presentations/docker-intro$ docker run hello-world
@@ -147,13 +147,13 @@ There's a ton more to docker. We've really only discussed pretty simple web appl
 It's so powerful and abstract and "simple" to use that it's easy to forget how complicated it really is under the hood. It feels like magic.
 
 ##### Appendix: Important Commands
-- sudo docker ps: list the running docker containers
-- sudo docker image ls: list the docker images on the host machine
-- sudo docker container: lists the docker containers on the host machine
-- sudo docker run: the command to use to run a container from an impage
-- sudo docker inspect: tells you LOTS of information, some of which might be helpful for debugging
-- sudo docker exec -it <container_id> /bin/sh: gives you a shell inside the container
-- sudo docker logs <container_id>: shows you the docker logs for a container
+- `sudo docker ps`: list the running docker containers
+- `sudo docker image ls`: list the docker images on the host machine
+- `sudo docker container ls`: lists the running docker containers
+- `sudo docker run <addl_info>`: the command to use to run a container from an image
+- `sudo docker inspect <container_id>`: tells you LOTS of information, some of which might be helpful for debugging
+- `sudo docker exec -it <container_id> /bin/sh`: gives you a shell inside the container
+- `sudo docker logs <container_id>`: shows you the docker logs for a container
 
 ##### Appendix: Other helpful info
 - Our documentation: https://tdx.umn.edu/TDClient/31/Portal/KB/ArticleDet?ID=7390
